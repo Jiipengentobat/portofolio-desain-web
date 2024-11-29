@@ -1,0 +1,479 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>portofolio fajri</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+        }
+        .sidebar {
+            background: linear-gradient(to bottom, #e4c10e, #d73d05);
+            padding: 20px;
+            height: 100vh;
+            position: fixed;
+            width: 200px;
+            box-shadow: 2px 0 5px rgba(0, 0, 0, 0.1);
+        }
+        .main-content {
+            margin-left: 270px;
+            padding: 50px;
+            text-align: center;
+            
+        }
+        .profile-img {
+            width: 100px;
+            height: 100px;
+            border-radius: 50%;
+            object-fit: cover;
+        }
+        .sidebar footer {
+            position: absolute;
+            bottom: 2px;
+            left: 0;
+            width: 100%;
+            
+        }
+
+        .video-background {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            z-index: -1;
+        }
+         .card-hover {
+        position: relative;
+        overflow: hidden;
+        background-color: #ffffff;
+        border-radius: 10px;
+        transition: transform 0.3s ease, box-shadow 0.3s ease;
+        z-index: 1;
+        }
+
+        .card-hover:hover {
+        transform: translateY(-5px);
+        box-shadow: 0 8px 12px rgba(0, 0, 0, 0.2);
+        }
+
+        .card-hover::before {
+        content: '';
+        position: absolute;
+        top: 0;
+        left: -100%;
+        width: 300%;
+        height: 100%;
+        background: linear-gradient(120deg, rgba(255, 0, 0, 0.2), rgba(0, 204, 255, 0.3), rgba(255, 255, 0, 0.2));
+        transition: opacity 0.3s ease;
+        z-index: -1;
+        }
+
+        .card-hover:hover::before {
+        left: 0;
+        animation: slideGradient 1.5s linear infinite;
+        }
+
+        @keyframes slideGradient {
+        0% {
+            background-position: 0% 50%;
+        }
+        100% {
+            background-position: 100% 50%;
+        }
+        }
+
+
+       
+        
+    </style>
+</head>
+<body>
+
+ 
+    <video autoplay loop muted playsinline class="video-background" id="background-video">
+        <source src="quality_restoration_20240922203716344.mp4" type="video/mp4">
+    </video>
+
+    
+    <script>
+        
+
+        const video = document.getElementById('background-video');
+        video.playbackRate = 1.5; 
+    </script>
+
+
+
+
+    <div class="sidebar">
+        <div class="text-center">
+            <img src="Ajay.jpg" alt="Profile Image" class="profile-img mb-3">
+            <div style="font-size: 1rem; font-family:'times new roman'; color: #f8f9fa;">
+            <h5 >AHMAD FAJRI ARRIZKI</h5>
+            <p>2311532004</p>
+        </div>
+        </div>
+        <nav class="nav flex-column text-center mt-4">
+            <a class="nav-link text-white" href="#"><i class='bx bxs-home-alt-2'></i>Menu</a>
+            <a class="nav-link text-white" href="#"><i class='bx bxs-school'></i>Tentang</a>
+            <a class="nav-link text-white" href="#"><i class='bx bx-code-alt'></i>Skills</a>
+            <a class="nav-link text-white" href="#"><i class='bx bxs-graduation'></i>Pendidikan</a>
+            <a class="nav-link text-white" href="#"><i class='bx bxs-briefcase-alt'></i>Pengalaman</a>
+            <a class="nav-link text-white" href="#"><i class='bx bxs-contact'></i>Kontak</a>
+        </nav>
+        <footer class="text-center mt-auto" style="background: linear-gradient(to bottom, #d73d05, #ea9312); padding: 10px; border-top: 1px solid #e7e7e7;">
+            <small style="color: #f9f9f9; font-weight: bold;">Departemen Informatika
+                <P><i class='bx bx-phone'>083807556588</i> <i class='bx bx-envelope'>fajriarrizkiahmad@gmail.com</i></P>
+            </small>
+        </footer>
+    </div>
+
+    <div class="main-content text-center" style="padding: 20px;">
+        <h1 style="font-size: 2rem; color: #f3ecec; font-weight: bold;">Saya seorang mahasiswa Universitas Andalas di jurusan Informatika</h1>
+        <p class="text-white" style="font-size: 1rem; margin-top: 10px; color: #f3ecec;">Saya sedang mendalami pendidikan untuk menjadi <span style="font-weight: bold; color: #4CAF50;">UI/UX Designer</span>.
+        </p>
+       
+        <div class="card mx-auto d-block" style="width:400px;">
+            <div style="padding: 20px;"> 
+                <img class="card-img-top" src="aji.jpg" style="border-bottom: 1px solid #ddd; border-radius: 5px; max-width: 100%; height: auto;">
+            </div>
+            <div class="card-body" style="background-blend-mode: color-burn;">
+                <p style="color: #555; margin: 0; text-align: center;">"Trust your self and keep breathing :)"</p>
+            </div>
+        </div>
+        
+          
+        
+          <div class="mt-4 row col-12 mb-5">
+           
+            <div class="mx-auto d-block m-2 col-md-5" style="font-family: Arial, sans-serif; background-blend-mode: luminosity; border-radius: 10px; padding: 20px; box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);">
+                <h2 style="font-weight: bold; text-align: center; color: #ffffff;">Skill</h2>
+                <div>
+                    <label class="text-white">HTML</label>
+                    <div class="progress mb-3">
+                        <div class="progress-bar progress-bar-striped progress-bar-animated bg-success" role="progressbar" style="width: 100%;">(masi pemula)</div>
+                    </div>
+
+                    <label class="text-white">CSS</label>
+                    <div class="progress mb-3">
+                        <div class="progress-bar progress-bar-striped progress-bar-animated bg-info" role="progressbar" style="width: 100%;">(masi pemula)</div>
+                    </div>
+
+                    <label class="text-white">JavaScript</label>
+                    <div class="progress mb-3">
+                        <div class="progress-bar progress-bar-striped progress-bar-animated bg-warning" role="progressbar" style="width: 100%;">(masi pemula)</div>
+                    </div>
+
+                    <label class="text-white">JAVA</label>
+                    <div class="progress mb-3">
+                        <div class="progress-bar progress-bar-striped progress-bar-animated bg-danger" role="progressbar" style="width: 100%;">(masi pemula)</div>
+                    </div>
+
+                    <label class="text-white">Phyton</label>
+                    <div class="progress mb-3">
+                        <div class="progress-bar progress-bar-striped progress-bar-animated bg-dark" role="progressbar" style="width: 100%;">(masi pemula)</div>
+                    </div>
+
+                </div>
+            </div>
+        
+           
+            <div class="mx-auto d-block m-2 col-md-5" style="font-family: Arial, sans-serif;background-blend-mode: hard-light; border-radius: 10px; padding: 20px; box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);">
+                <h2 style="font-weight: bold; text-align: center; margin-bottom: 20px; color: #ffffff;">Sertifikat</h2>
+                <div class="accordion" id="accordionExample">
+                    <div class="accordion-item">
+                        <h2 class="accordion-header" id="headingOne">
+                            <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                                Sertifikat 1
+                            </button>
+                        </h2>
+                        <div id="collapseOne" class="accordion-collapse collapse" aria-labelledby="headingOne" data-bs-parent="#accordionExample">
+                            <div class="accordion-body">
+                                <img src="sertif 1.png" alt="Sertifikat 1" style="width: 30%; display: block;">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="accordion-item">
+                        <h2 class="accordion-header" id="headingTwo">
+                            <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                                Sertifikat 2
+                            </button>
+                        </h2>
+                        <div id="collapseTwo" class="accordion-collapse collapse" aria-labelledby="headingTwo" data-bs-parent="#accordionExample">
+                            <div class="accordion-body">
+                                <img src="sertif 2.png" alt="Sertifikat 2" style="width: 30%; display: block;">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="accordion-item">
+                        <h2 class="accordion-header" id="headingThree">
+                            <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+                                Sertifikat 3
+                            </button>
+                        </h2>
+                        <div id="collapseThree" class="accordion-collapse collapse" aria-labelledby="headingThree" data-bs-parent="#accordionExample">
+                            <div class="accordion-body">
+                                <img src="sertif 3.png" alt="Sertifikat 3" style="width: 30%; display: block;">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="accordion-item">
+                        <h2 class="accordion-header" id="headingFour">
+                            <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseFour" aria-expanded="false" aria-controls="collapseFour">
+                                Sertifikat 4
+                            </button>
+                        </h2>
+                        <div id="collapseFour" class="accordion-collapse collapse" aria-labelledby="headingFour" data-bs-parent="#accordionExample">
+                            <div class="accordion-body">
+                                <img src="sertif 4.png" alt="Sertifikat 4" style="width: 30%; display: block;">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="accordion-item">
+                        <h2 class="accordion-header" id="headingFive">
+                            <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseFive" aria-expanded="false" aria-controls="collapseFive">
+                                Sertifikat 5
+                            </button>
+                        </h2>
+                        <div id="collapseFive" class="accordion-collapse collapse" aria-labelledby="headingFive" data-bs-parent="#accordionExample">
+                            <div class="accordion-body">
+                                <img src="sertif 5.png" alt="Sertifikat 5" style="width: 30%; display: block;">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="accordion-item">
+                        <h2 class="accordion-header" id="headingSix">
+                            <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseSix" aria-expanded="false" aria-controls="collapseSix">
+                                Sertifikat 6
+                            </button>
+                        </h2>
+                        <div id="collapseSix" class="accordion-collapse collapse" aria-labelledby="headingSix" data-bs-parent="#accordionExample">
+                            <div class="accordion-body">
+                                <img src="sertif 6.png" alt="Sertifikat 6" style="width: 30%; display: block;">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            
+            
+            
+
+            <div class="mx-auto d-block gap-3 mt-4 col-10" style="font-family: Arial, sans-serif; background-blend-mode: color-burn; border-radius: 10px; padding-bottom: 20px; box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);">
+                <h2 style="font-weight: bold; text-align: center; color: #ffffff;">Pengalaman</h2>
+            
+                <div class="card mb-3 card-hover">
+                    <div class="card-body">
+                        <h5 class="card-title">
+                            <i class="fas fa-school"></i> OSIM MAN 1 Padang Panjang
+                        </h5>
+                        <p class="card-text text-muted">Staff jurnalistik</p>
+                    </div>
+                </div>
+            
+                <div class="card mb-3 card-hover">
+                    <div class="card-body">
+                        <h5 class="card-title">
+                            <i class="fas fa-users"></i> Himpunan Mahasiswa Informatika
+                        </h5>
+                        <p class="card-text text-muted">Staff HRD</p>
+                    </div>
+                </div>
+            
+                <div class="card mb-3 card-hover">
+                    <div class="card-body">
+                        <h5 class="card-title">
+                            <i class="fas fa-school"></i> Panitia Informaticup
+                        </h5>
+                        <p class="card-text text-muted">Staff Acara</p>
+                    </div>
+                </div>
+            
+                <div class="card mb-3 card-hover">
+                    <div class="card-body">
+                        <h5 class="card-title">
+                            <i class="fas fa-school"></i> Panitia Bakti Departemen
+                        </h5>
+                        <p class="card-text text-muted">Koordinator Lapangan</p>
+                    </div>
+                </div>
+            </div>
+            
+            
+            <div class="mx-auto d-block container mt-4 p-4" style="font-family: Arial, sans-serif; background-color: #f9f9f9; border-radius: 10px; padding: 20px; box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); margin-top: 50px;">
+                <h2 style="font-weight: bold; text-align: center; margin-bottom: 20px;">Riwayat Pendidikan</h2>
+                <div class="accordion" id="accordionExample">
+                    <div class="accordion-item">
+                        <h2 class="accordion-header" id="headingOne">
+                            <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                                SDIT Khaira Ummah Padang
+                            </button>
+                        </h2>
+                        <div id="collapseOne" class="accordion-collapse collapse" aria-labelledby="headingOne" data-bs-parent="#accordionExample">
+                            <div class="accordion-body">
+                                <img src="sd1.webp" style="width: 80%; justify-content: center;">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="accordion-item">
+                        <h2 class="accordion-header" id="headingTwo">
+                            <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                                SDN 17 Tuapejat
+                            </button>
+                        </h2>
+                        <div id="collapseTwo" class="accordion-collapse collapse" aria-labelledby="headingTwo" data-bs-parent="#accordionExample">
+                            <div class="accordion-body">
+                                <img src="" alt="foto tidak ditemukan" style="width: 80%; justify-content: center;">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="accordion-item">
+                        <h2 class="accordion-header" id="headingThree">
+                            <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+                                SDN 01 Pauh Kuraitaji
+                            </button>
+                        </h2>
+                        <div id="collapseThree" class="accordion-collapse collapse" aria-labelledby="headingThree" data-bs-parent="#accordionExample">
+                            <div class="accordion-body">
+                                <img src="sd3.webp" style="width: 80%; justify-content: center;">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="accordion-item">
+                        <h2 class="accordion-header" id="headingFour">
+                            <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseFour" aria-expanded="false" aria-controls="collapseFour">
+                                SMP Arrisalah Padang
+                            </button>
+                        </h2>
+                        <div id="collapseFour" class="accordion-collapse collapse" aria-labelledby="headingFour" data-bs-parent="#accordionExample">
+                            <div class="accordion-body">
+                                <img src="smp.jpeg" style="width: 80%; justify-content: center;">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="accordion-item">
+                        <h2 class="accordion-header" id="headingFive">
+                            <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseFive" aria-expanded="false" aria-controls="collapseFive">
+                                MAN 1 Kota Padang Panjang
+                            </button>
+                        </h2>
+                        <div id="collapseFive" class="accordion-collapse collapse" aria-labelledby="headingFive" data-bs-parent="#accordionExample">
+                            <div class="accordion-body">
+                                <img src="man.jpeg" style="width: 80%; justify-content: center;">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="accordion-item">
+                        <h2 class="accordion-header" id="headingSix">
+                            <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseSix" aria-expanded="false" aria-controls="collapseSix">
+                                Universitas Andalas-Informatika
+                            </button>
+                        </h2>
+                        <div id="collapseSix" class="accordion-collapse collapse" aria-labelledby="headingSix" data-bs-parent="#accordionExample">
+                            <div class="accordion-body">
+                                <img src="unand.webp" style="width: 80%; justify-content: center;">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <div id="projectCarousel" class="carousel slide my-5" data-bs-ride="carousel">
+                <h2 class="mx-auto d-block text-center mb-4 text-white">Hasil Proyek</h2>
+                <div class="carousel-inner">
+                    <div class="carousel-item active">
+                        <div class="card border rounded">
+                            <div style="padding: 80px;"> 
+                            <img src="p1.png" class="card-img-top" alt="Proyek 1">
+                        </div>
+                            <div class="card-body text-center">
+                                <h5 class="card-title">-Aplikasi Laundry-</h5>
+                                <p class="card-text text-muted">"Aplikasi ini dibuat dengan tujuan selain sebagai tugas juga untuk pengoperasian usaha laundry, dimana terdapat fitur-fitur yang dapat memudahkan pekerjaan dalam menjalankan usaha laundry tersebut."</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="carousel-item">
+                        <div class="card border rounded">
+                            <div style="padding: 80px;"> 
+                            <img src="p2.jpg" class="card-img-top" alt="Proyek 2">
+                        </div>
+                            <div class="card-body text-center">
+                                <h5 class="card-title">-Kalkulator-</h5>
+                                <p class="card-text">(projek nya hilang :)</p>
+                            </div>
+                        </div>
+                    </div>
+                    
+                <button class="carousel-control-prev" type="button" data-bs-target="#projectCarousel" data-bs-slide="prev">
+                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Previous</span>
+                </button>
+                <button class="carousel-control-next" type="button" data-bs-target="#projectCarousel" data-bs-slide="next">
+                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Next</span>
+                </button>
+            </div>
+
+
+             <div id="projectCarousel" class="carousel slide my-5" data-bs-ride="carousel">
+                <h2 class="mx-auto d-block text-center mb-4 text-white">My Random Photos</h2>
+                <div class="carousel-inner">
+                    <div class="carousel-item active">
+                        <div class="card border rounded">
+                            <div style="padding: 80px;"> 
+                            <img src="pe1.jpg" class="card-img-top" alt="Proyek 1">
+                        </div>
+                            <div class="card-body text-center">
+                                <h5 class="card-title"></h5>
+                                <p class="card-text text-muted"></p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="carousel-item">
+                        <div class="card border rounded">
+                            <div style="padding: 80px;"> 
+                            <img src="pe2.jpg" class="card-img-top" alt="Proyek 2">
+                        </div>
+                            <div class="card-body text-center">
+                                <h5 class="card-title"></h5>
+                                <p class="card-text"></p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="carousel-item">
+                        <div class="card border rounded">
+                            <div style="padding: 80px;"> 
+                            <img src="pe3.jpg" class="card-img-top" alt="Proyek 2">
+                        </div>
+                            <div class="card-body text-center">
+                                <h5 class="card-title"></h5>
+                                <p class="card-text"></p>
+                            </div>
+                        </div>
+                    </div>
+                    
+                <button class="carousel-control-prev" type="button" data-bs-target="#projectCarousel" data-bs-slide="prev">
+                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Previous</span>
+                </button>
+                <button class="carousel-control-next" type="button" data-bs-target="#projectCarousel" data-bs-slide="next">
+                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Next</span>
+                </button>
+            </div>
+            
+           
+            
+        
+
+  
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
